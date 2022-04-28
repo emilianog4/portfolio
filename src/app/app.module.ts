@@ -8,6 +8,10 @@ import { AcercaDeComponent } from './components/acerca-de/acerca-de.component';
 import { AptitudesComponent } from './components/aptitudes/aptitudes.component';
 import { ExperienciaYEducacionComponent } from './components/experiencia-y-educacion/experiencia-y-educacion.component';
 import { LogrosComponent } from './components/logros/logros.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './modules/material/material.module';
+
+
 
 @NgModule({
   declarations: [
@@ -20,7 +24,9 @@ import { LogrosComponent } from './components/logros/logros.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
