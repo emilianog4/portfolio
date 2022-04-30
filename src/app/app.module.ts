@@ -10,6 +10,13 @@ import { ExperienciaYEducacionComponent } from './components/experiencia-y-educa
 import { LogrosComponent } from './components/logros/logros.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './modules/material/material.module';
+import { RedesSocialesComponent } from './components/header/redes-sociales/redes-sociales.component';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
 
 
 
@@ -20,13 +27,20 @@ import { MaterialModule } from './modules/material/material.module';
     AcercaDeComponent,
     AptitudesComponent,
     ExperienciaYEducacionComponent,
-    LogrosComponent
+    LogrosComponent,
+    RedesSocialesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    LayoutModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
