@@ -1,0 +1,26 @@
+
+#acerca-de{
+    background-color:rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-family: Roboto;
+    font-size: 1.2rem;
+}
+#card1, #foto{
+    height:20rem;
+}
+#card2{
+    width: 30%;
+    text-align: center;
+    color: white;
+}
+p{ 
+    text-align: justify;
+    margin: 1rem;
+}
+h1{ 
+    margin-top: 1rem;
+    margin-bottom: 0;
+    font-weight: 1000;
+}
