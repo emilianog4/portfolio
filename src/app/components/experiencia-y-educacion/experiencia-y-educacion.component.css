@@ -1,0 +1,15 @@
+*{
+    color: white;
+}
+
+#certificacion {
+    width: 40%;
+    display: flex;
+    margin: 0 auto;
+    height: 100%;
+    align-items: center;
+}
+h1{
+    font-size:2rem;
+    text-align: center;
+}
