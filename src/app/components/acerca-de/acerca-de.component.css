@@ -1,7 +1,5 @@
 
 #acerca-de{
-    background-color:rgb(0, 0, 0);
-    color: white;
     display: flex;
     justify-content: center;
     font-family: Roboto;
@@ -15,7 +13,6 @@
 #card2{
     width: 30%;
     text-align: center;
-    color: white;
 }
 p{ 
     text-align: justify;
