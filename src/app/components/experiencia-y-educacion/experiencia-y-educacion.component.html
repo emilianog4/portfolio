@@ -1,5 +1,31 @@
-<div id="experiencia">
-    <h1>Experiencia y Certificaciones</h1>
-    <img src="../../../assets/certificacion.png" alt="certificacion freecodecamp" id="certificacion">
+<h1>Experiencia y Certificaciones</h1>
+<div id="experiencia" *ngFor="let educacion of educacion">
+    <div>    
+        <img src="{{educacion.imagenEdu}}" alt="certificacion freecodecamp" id="certificacion">
+    </div>
+    <div class="col text-center">
+        <a class="btn btn-primary tooltips" 
+        data placement="top"
+        data-toggle="tooltips"
+        data-original-title="edit"
+        ><i class="fa fa-pencil"></i>
+        </a>
+
+        <a class="btn btn-secondary tooltips" 
+        data placement="top"
+        data-toggle="tooltips"
+        data-original-title="delete"
+        ><i class="fa fa-times"></i>
+        </a>
+    </div>
+    <div>
+        {{educacion.tituloEdu}}
+    </div>
+    <div>
+        {{educacion.fechaEdu}}
+    </div>
+    <div>
+        {{educacion.descEdu}}
+    </div>
 </div>
 <app-educacion></app-educacion>

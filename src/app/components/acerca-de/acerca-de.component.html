@@ -1,14 +1,10 @@
-<div id="acerca-de">
-<div id="card1">
-    <img src="../../../assets/fotocv.jpg" alt="foto de perfil" id="foto">
-</div>
-<div id="card2">
-    <h1>Emiliano Gutierrez</h1>
-    <h2>Full Stack Developer Jr.</h2>
-    <p>Desde chico siempre me gustaron las computadoras y todo lo referido a ellas, por eso
-       cuando tuve la oportunidad de capacitarme elegí el desarrollo web. Me apasiona construir programas
-       y usar la creatividad para resolver problemas me resulta divertido. Soy una persona proactiva que sigue 
-       aprendiendo y trabajando para mejorar. Gracias por visitar mi portfolio. 😊   
-    </p>
-</div>
+<div id="acerca-de" *ngIf="usuario">
+    <div id="card1">
+        <img src="{{usuario.fotoPerfil}}" alt="foto de perfil" id="foto">
+    </div>
+    <div id="card2">
+        <h1>{{usuario.nombre}} {{usuario.apellido}}</h1>
+        <h2>{{usuario.titulo}}</h2>
+        <p>{{usuario.descripcion}}</p>
+    </div>
 </div>

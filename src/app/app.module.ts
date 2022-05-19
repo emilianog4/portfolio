@@ -24,6 +24,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { IniciarSesionComponent } from './components/iniciar-sesion/iniciar-sesion.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -54,6 +55,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatGridListModule,
     MatCardModule,
     MatMenuModule,
+    HttpClientModule,
     ReactiveFormsModule
   ],
   providers: [],
