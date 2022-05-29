@@ -1,10 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { IniciarSesionComponent } from './components/iniciar-sesion/iniciar-sesion.component';
+import { LoginComponent } from './components/auth/login.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
+import { GuardService } from './guards/guard.service';
+
+
+
 const routes: Routes = [
   {path:'portfolio', component:PortfolioComponent},
-  {path:'iniciar-sesion', component:IniciarSesionComponent},
+  {path:'login', component:LoginComponent},
   {path:'', redirectTo:'portfolio', pathMatch:'full'}
 ];
 

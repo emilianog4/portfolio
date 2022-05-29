@@ -1,11 +1,78 @@
-#certificacion {
-    width: 10%;
-    display: flex;
-    margin: 0 auto;
-    height: 100%;
-    align-items: center;
-}
-h1{
-    font-size:2rem;
+body{
+    height: 100vh;
+} 
+
+#title{
+    font-size:3rem;
     text-align: center;
+    margin-bottom: 3rem;
+}
+
+#addEducacion{
+    margin: 3rem 0;
+    padding-top: 4rem;
+}
+#card-educacion{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: center;    
+    
+    
+}
+#eduCard{
+    border-radius: 1rem;
+    margin: 2rem;
+    padding: 0.4rem;
+    background-color: rgba(162, 162, 162, 0.185);
+}
+
+#img-educacion{
+    width: 100%;
+    height: 40vh;
+}
+
+#titulo-edu{
+    font-size: 1.5rem;
+    padding:1rem;
+    display: flex;
+    justify-content:center;
+    font-weight: 600;
+    background-color: rgba(148, 148, 148, 0.596);
+}
+#fecha-edu{
+    margin-bottom: 0.5rem;
+    display: flex;
+    padding-top: 0.5rem;
+    justify-content:center;
+}
+#desc-edu{
+    width:100%;
+    padding:1rem;
+    font-size: 1rem;
+}
+#addEducationModal, #editEducationModal, #deleteEducationModal{
+    background-color: rgba(0, 0, 0, 0.307);
+    font-weight: 700;
+    color:white;
+}
+.modal-content{
+    background: rgb(78,78,78);
+    background: linear-gradient(253deg, rgba(24, 24, 24, 0.794) 0%, rgba(100, 100, 100, 0.789) 100%);
+    border-color: rgba(95, 95, 95, 0.599);
+    border-width: 0.2rem;
+
+}
+.modal-header{
+    background: rgba(0, 71, 212, 0.551);
+    padding-bottom: 2rem;
+    background: linear-gradient(253deg, rgba(71, 114, 201, 0.574rgba(6, 33, 154, 0.614),154,1) 60%);
+}
+.modal-title{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+input{
+    background: rgba(255, 255, 255, 0.783);
+    background: linear-gradient(253deg, rgba(71, 114, 201, 0.574rgba(6, 33, 154, 0.614),154,1) 60%);
+    color:rgb(0, 0, 0);
 }

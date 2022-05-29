@@ -1,14 +1,14 @@
 <h1 class="m-5">Iniciar sesión</h1>
 <form [formGroup]="form" class="m-5">
     <div class="mb-3">
-      <label for="exampleInputEmail1" class="form-label">Email</label>
-      <input type="email" formControlName="email" [ngClass]="{'is-invalid': Email?.errors && Email?.touched, 'is-valid':!Email?.errors && Email?.touched}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-      <div *ngIf="Email?.errors && Email?.touched">
-        <p *ngIf="Email?.hasError('required')" class="text-danger">
-          El email es requerido
+      <label for="exampleInputEmail1" class="form-label">username</label>
+      <input type="username" formControlName="username" [ngClass]="{'is-invalid': username?.errors && username?.touched, 'is-valid':!username?.errors && username?.touched}" class="form-control" id="exampleInputUsername1" aria-describedby="usernameHelp">
+      <div *ngIf="username?.errors && username?.touched">
+        <p *ngIf="username?.hasError('required')" class="text-danger">
+          El username es requerido
         </p>
-        <p *ngIf="Email?.hasError('email')" class="text-danger">
-          El formato del email es inválido
+        <p *ngIf="username?.hasError('username')" class="text-danger">
+          El formato del username es inválido
         </p>
       </div>
     </div>

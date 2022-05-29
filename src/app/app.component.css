@@ -1,0 +1,9 @@
+*{
+    background: var(--lightColor);
+    color: var(--lightText);
+    
+}
+.form-check, .form-switch{
+    margin-top: 4rem;
+    position: fixed;
+}

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TokenService } from 'src/app/servicios/token.service';
 
 
 @Component({
@@ -7,10 +8,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./portfolio.component.css']
 })
 export class PortfolioComponent implements OnInit {
-  
-  constructor() { }
+  isLogged = false;
+  isAdmin = false;
+  username!: string;
+
+  constructor(private tokenService: TokenService) { }
 
   ngOnInit(): void {
+    this.isLogged = this.tokenService.isLogged();
+    this.isAdmin = this.tokenService.isAdmin();
+    this.username = this.tokenService.getUsername();
   }
-  
+
+  onLogOut(): void {
+    this.tokenService.logOut();
+  }
+
 }

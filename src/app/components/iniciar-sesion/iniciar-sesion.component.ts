@@ -10,7 +10,7 @@ export class IniciarSesionComponent implements OnInit {
   form:FormGroup;
   constructor(private formBuilder:FormBuilder) { 
     this.form=this.formBuilder.group({
-      email:['', [Validators.required, Validators.email]],
+      username:['', [Validators.required, Validators.email]],
       password:['', [Validators.required, Validators.minLength(8)]]
       /* falta agregar algunos datos!! */ 
     })
@@ -19,8 +19,8 @@ export class IniciarSesionComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  get Email() {
-    return this.form.get('email');
+  get username() {
+    return this.form.get('username');
   }
 
   get Password() {

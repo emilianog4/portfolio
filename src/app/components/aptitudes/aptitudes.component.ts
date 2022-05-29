@@ -6,9 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./aptitudes.component.css']
 })
 export class AptitudesComponent implements OnInit {
-  ingles=90;
-  progress = 20;
-  constructor() { }
+  ingles=55;
+  angular=40;
+  java=35;
+  teamwork=90;
+  selfStarter=90;
+  lifelongLearning=90;
+
+constructor() { }
 
   ngOnInit(): void {
   }

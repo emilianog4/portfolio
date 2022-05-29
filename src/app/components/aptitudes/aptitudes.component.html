@@ -1,21 +1,20 @@
+<div id="container">
 <h1>Soft and hard skills</h1>
-<div id="aptitudes">
+<div id="hardSkills">
     <mat-progress-spinner [value]="ingles" diameter="200" strokeWidth="25"></mat-progress-spinner>
     <div id="texto">INGLES <br> &nbsp;&nbsp;&nbsp; {{ingles}}% </div>
-    <mat-progress-spinner value="30" diameter="200" strokeWidth="25"></mat-progress-spinner>
-    <div id="texto">RESPONSABILIDAD</div>
-    <mat-progress-spinner value="60" diameter="200" strokeWidth="25"></mat-progress-spinner>
-    <div id="texto">COLLABORATION</div>
+    <mat-progress-spinner [value]="angular" diameter="200" strokeWidth="25"></mat-progress-spinner>
+    <div id="texto">ANGULAR <br> &nbsp;&nbsp;&nbsp; {{angular}}%</div>
+    <mat-progress-spinner [value]="java" diameter="200" strokeWidth="25"></mat-progress-spinner>
+    <div id="texto">JAVA <br> &nbsp;&nbsp;&nbsp; {{java}}%</div>
 </div>
-<div id="aptitudes">
-    <mat-progress-spinner value="90" diameter="200" strokeWidth="25" color="accent"></mat-progress-spinner>
-    <div id="texto">teamwork </div>
-    <mat-progress-spinner value="30" diameter="200" strokeWidth="25" color="accent"></mat-progress-spinner>
-    <div id="texto">self-starter</div>
-    <mat-progress-spinner value="60" diameter="200" strokeWidth="25" color="accent"></mat-progress-spinner>
-    <div id="texto">lifelong learning</div>
+<div id="softSkills"> 
+    <mat-progress-spinner [value]="teamwork" diameter="200" strokeWidth="25" color="accent"></mat-progress-spinner>
+    <div id="texto2">teamwork <br> &nbsp;&nbsp;&nbsp; {{teamwork}}%</div>
+    <mat-progress-spinner [value]="selfStarter" diameter="200" strokeWidth="25" color="accent"></mat-progress-spinner>
+    <div id="texto2" class="selfStarter">self-starter<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{selfStarter}}%</div>
+    <mat-progress-spinner [value]="lifelongLearning" diameter="200" strokeWidth="25" color="accent"></mat-progress-spinner>
+    <div id="texto2">lifelong<br> learning<br> &nbsp;&nbsp;&nbsp; {{lifelongLearning}}%</div>
 </div>
 <p>*Los valores son estimativos.</p>
-
-
-    
+</div>

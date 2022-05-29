@@ -1,0 +1,16 @@
+#button{
+    margin-top: 1rem;
+}
+.container{
+    height: 100vh;
+}
+
+.card{
+    height: 40vh;
+    background: var(--lightColor); 
+    color: var(--lightText);
+}
+
+h1{
+    color: var(--lightText);
+}

@@ -7,7 +7,6 @@ import { HeaderComponent } from './components/header/header.component';
 import { AcercaDeComponent } from './components/acerca-de/acerca-de.component';
 import { AptitudesComponent } from './components/aptitudes/aptitudes.component';
 import { ExperienciaYEducacionComponent } from './components/experiencia-y-educacion/experiencia-y-educacion.component';
-import { LogrosComponent } from './components/logros/logros.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './modules/material/material.module';
 import { RedesSocialesComponent } from './components/header/redes-sociales/redes-sociales.component';
@@ -21,10 +20,12 @@ import { EducacionComponent } from './components/experiencia-y-educacion/educaci
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
-import { IniciarSesionComponent } from './components/iniciar-sesion/iniciar-sesion.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { LoginComponent } from './components/auth/login.component';
+import { HomeComponent } from './components/home/home.component';
+import { interceptorProvider } from './interceptors/interceptor.service';
 
 
 
@@ -35,11 +36,11 @@ import { HttpClientModule } from '@angular/common/http';
     AcercaDeComponent,
     AptitudesComponent,
     ExperienciaYEducacionComponent,
-    LogrosComponent,
     RedesSocialesComponent,
     EducacionComponent,
-    IniciarSesionComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    LoginComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -56,9 +57,10 @@ import { HttpClientModule } from '@angular/common/http';
     MatCardModule,
     MatMenuModule,
     HttpClientModule,
-    ReactiveFormsModule
+    FormsModule,
+    ReactiveFormsModule,
   ],
-  providers: [],
+  providers: [interceptorProvider],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

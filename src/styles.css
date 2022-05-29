@@ -1,11 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
 
+:root {
+    --lightColor: rgb(216, 216, 216);
+    --lightText: rgb(0, 0, 0);
+}
+
+/* 
 html, body { 
     height: 100%;
     background: rgb(255,255,255);
     background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(217,217,217,1) 87%, rgba(191,191,191,1) 100%); 
-}
+} */
 
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; 
+body { 
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif; 
 }
-

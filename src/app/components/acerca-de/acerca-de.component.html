@@ -1,9 +1,10 @@
+<h1 id="title">Acerca de mi..</h1>
 <div id="acerca-de" *ngIf="usuario">
     <div id="card1">
         <img src="{{usuario.fotoPerfil}}" alt="foto de perfil" id="foto">
     </div>
     <div id="card2">
-        <h1>{{usuario.nombre}} {{usuario.apellido}}</h1>
+        <h1 id="name">{{usuario.nombre}} {{usuario.apellido}}</h1>
         <h2>{{usuario.titulo}}</h2>
         <p>{{usuario.descripcion}}</p>
     </div>

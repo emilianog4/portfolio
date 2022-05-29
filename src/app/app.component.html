@@ -1,3 +1,7 @@
 <div>
-    <router-outlet></router-outlet>
+    <div class="form-check form-switch" id="switch">
+        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitch" (click)="changeTheme(toggleTheme())">
+        <label class="form-check-label" for="flexSwitch"><i class="fa-solid fa-moon"></i></label>
+    </div>
+    <router-outlet> </router-outlet> 
 </div>
