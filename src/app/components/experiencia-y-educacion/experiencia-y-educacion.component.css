@@ -16,8 +16,6 @@ body{
     display: grid;
     grid-template-columns: 40% 40%;
     justify-content: center;    
-    
-    
 }
 #eduCard{
     border-radius: 1rem;
@@ -29,6 +27,7 @@ body{
 #img-educacion{
     width: 100%;
     height: 40vh;
+    /* background-size: cover; */
 }
 
 #titulo-edu{

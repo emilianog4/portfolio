@@ -71,9 +71,9 @@ export class ExperienciaYEducacionComponent implements OnInit {
       }
     })    
   }
-  public onUpdateEducacion(educacion: Educacion){
+  public onUpdateEducacion(educacion: Educacion): void{
     this.editarEducacion=educacion;
-    document.getElementById('add-education-form')?.click();
+    // document.getElementById('add-education-form')?.click();
     this.educacionService.updateEducacion(educacion).subscribe({
       next: (response:Educacion) =>{
         console.log(response);
@@ -86,7 +86,6 @@ export class ExperienciaYEducacionComponent implements OnInit {
   }
 
   public onDeleteEducacion(idEdu: number):void{
- 
     this.educacionService.deleteEducacion(idEdu).subscribe({
       next: (response:void) =>{
         console.log(response);
