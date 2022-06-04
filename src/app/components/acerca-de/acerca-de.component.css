@@ -4,7 +4,7 @@
     justify-content: center;
     font-family: Roboto;
     font-size: 1.2rem;
-    height:90vh;
+    height:100vh;
     align-items: center;
 }
 #title{
@@ -15,7 +15,7 @@
     height:30vh;
 }
 #card2{
-    width: 30%;
+    width: 45%;
     height:30vh;
     text-align: center;
 }
@@ -36,4 +36,63 @@ p{
 
 h2{
     padding-bottom:0.6rem;
+}
+.modal-content{
+    background: rgb(78,78,78);
+    background: linear-gradient(253deg, rgba(24, 24, 24, 0.794) 0%, rgba(100, 100, 100, 0.789) 100%);
+    border-color: rgba(95, 95, 95, 0.599);
+    border-width: 0.2rem;
+
+}
+.modal-header{
+    background: rgba(0, 71, 212, 0.551);
+    padding-bottom: 2rem;
+    background: linear-gradient(253deg, rgba(71, 114, 201, 0.574rgba(6, 33, 154, 0.614),154,1) 60%);
+}
+.modal-title{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+input{
+    background: rgba(255, 255, 255, 0.783);
+    background: linear-gradient(253deg, rgba(71, 114, 201, 0.574rgba(6, 33, 154, 0.614),154,1) 60%);
+    color:rgb(0, 0, 0);
+}
+#editUsuarioModal{
+    background-color: rgba(0, 0, 0, 0.307);
+    font-weight: 700;
+    color:white;
+}
+
+
+@media (max-width:768px){
+    #acerca-de{
+        display: flex;
+        width: 100vw;
+        align-items: center;
+        justify-content: center;
+        height:100vh;
+        flex-flow: column;
+    }
+    #card2{
+        width: 336px;
+    }
+}
+
+
+
+
+@media (max-width: 576px){
+    #acerca-de{
+        display: flex;
+        width: 100vw;
+        align-items: center;
+        justify-content: center;
+        height:100vh;
+        flex-flow: column;
+    }
+    #card2{
+        width: 336px;
+    }
+
 }

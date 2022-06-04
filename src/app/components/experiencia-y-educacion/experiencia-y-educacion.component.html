@@ -1,4 +1,4 @@
-<h1 id="title">Educación y Experiencia</h1>
+<h1 id="titleEducacion">Educación y Experiencia</h1>
 
 <div class="text-center" *ngIf="isAdmin" id="addEducacion">
     <button type="button" class="btn btn-success btn-lg" data-bs-toggle="modal" 
@@ -10,7 +10,7 @@
 </div>
 <div id="card-educacion">
 <div *ngFor="let educacion of educacion" id="eduCard">
-    <div>    
+    <div id="picEdu">    
         <img src="{{educacion.imagenEdu}}" alt="certificacion"  id="img-educacion">
     </div>
     <div class="col text-center" *ngIf="isAdmin">

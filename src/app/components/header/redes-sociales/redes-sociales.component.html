@@ -16,9 +16,9 @@
       <mat-icon><a href="https://www.linkedin.com/in/emiliano-gutierrez-a36127239/" target="_blank"> <img src="../../../assets/linkedin.png" alt="Logo de Linkedin" id="linkedin"> </a></mat-icon>
     </button>
     <button mat-icon-button class="example-icon" aria-label="icon-button with login icon" *ngIf="!isLogged" routerLink="/login" title="Login" id="login">
-      <mat-icon>login</mat-icon> Iniciar Sesion
+      <mat-icon>login</mat-icon> <span id="is">Iniciar Sesion</span> 
     </button>
     <button mat-icon-button class="example-icon" aria-label="icon-button with login icon" *ngIf="isLogged" (click)="onLogOut()" title="Log Out" id="logout">
-      <mat-icon>logout</mat-icon>  Cerrar Sesion
+      <mat-icon>logout</mat-icon>  <span id="is">Cerrar Sesion</span>
     </button>
   </mat-toolbar>

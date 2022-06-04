@@ -1,44 +1,162 @@
-#container{
-    height: 90vh;
-    display: grid;
-    grid-template-rows: 2fr 2fr 2fr;
-}
-h1{
-    display: flex;
-    justify-content:center;
-    font-size:3rem;
-    margin: 3rem auto;
-    }
-#texto{
-    position: relative;
-    top: 0.5rem;
-    left: -8.2rem;
-    font-size:1.3rem;
-    font-weight: 500;
-}
-#texto2{
-    position: relative;
-    top: 0.5rem;
-    left: -8.7rem;
-    font-size:1.3rem;
-    font-weight: 500;
-}
-
-#softSkills, #hardSkills{
-    display: flex;
-    justify-content: center;
+#caja {
+    width: 20rem;
+    height: 20rem;
     align-items: center;
-    margin: 3rem 0;
-}
-#softSkills{
-    margin-left: 1.3rem;
-}
-
-p{ 
-    display:flex;
+    display:grid;
     justify-content: center;
 }
-#texto2.selfStarter{
+
+
+#texto {
     position: relative;
-    left: -9.3rem;
+    text-align: center;
+    top: -9.5rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    width: 200px;
 }
+
+p{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+#nombreSk{
+    font-size: 1.55rem;
+    font-weight: 600;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    margin: 5rem auto;
+}
+
+.modal-content {
+    background: rgb(78, 78, 78);
+    background: linear-gradient(253deg, rgba(24, 24, 24, 0.794) 0%, rgba(100, 100, 100, 0.789) 100%);
+    border-color: rgba(95, 95, 95, 0.599);
+    border-width: 0.2rem;
+
+}
+
+.modal-header {
+    background: rgba(0, 71, 212, 0.551);
+    padding-bottom: 2rem;
+    background: linear-gradient(253deg, rgba(71, 114, 201, 0.574rgba(6, 33, 154, 0.614), 154, 1) 60%);
+}
+
+.modal-title {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+input {
+    background: rgba(255, 255, 255, 0.783);
+    background: linear-gradient(253deg, rgba(71, 114, 201, 0.574rgba(6, 33, 154, 0.614), 154, 1) 60%);
+    color: rgb(0, 0, 0);
+}
+
+#addSkill {
+    margin: 3rem 0;
+    padding-top: 4rem;
+}
+
+#card-skill {
+    display: grid;
+    grid-template-columns: 22% 22% 22%;
+    justify-content: center;
+}
+
+#skillCard {
+    border-radius: 1rem;
+    margin: 1rem;
+    padding: 0.4rem;
+    width: 20vw;
+    height:17vw;
+}
+
+#addSkillsModal,
+#editSkillsModal,
+#deleteSkillsModal {
+    background-color: rgba(0, 0, 0, 0.307);
+    font-weight: 700;
+    color: white;
+
+}
+
+
+
+@media (max-width: 1600px) {
+    #card-skill {
+        display: grid;
+        grid-template-columns: 20% 20% 20%;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    #skillCard {
+        width: 28vw;
+        height:25vw;
+        display:grid;
+        align-items: center;
+        margin: 1rem;
+    }
+
+}
+
+    @media (max-width: 1140px) {
+        #card-skill {
+            display: grid;
+            grid-template-columns: 40% 40%;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        #skillCard {
+            width: 28vw;
+            height:25vw;
+            display:grid;
+            align-items: center;
+            margin: 1rem;
+        }
+
+}
+
+
+    @media (max-width: 896px) {
+        #card-skill {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        #skillCard {
+            width: 28vw;
+            height:25vw;
+            display:grid;
+            align-items: center;
+            margin-bottom: 6rem;
+        }
+
+    }
+    @media (max-width: 576px) {
+        #card-skill {
+            display: grid;
+            grid-template-columns: 60% 60%;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        #skillCard {
+            width: 28vw;
+            height:25vw;
+            display:grid;
+            align-items: center;
+            margin-bottom: 10rem;
+        }
+
+    }

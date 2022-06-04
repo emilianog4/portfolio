@@ -9,6 +9,7 @@ import { GuardService } from './guards/guard.service';
 const routes: Routes = [
   {path:'portfolio', component:PortfolioComponent},
   {path:'login', component:LoginComponent},
+  {path: '**', redirectTo: 'portfolio'},
   {path:'', redirectTo:'portfolio', pathMatch:'full'}
 ];
 

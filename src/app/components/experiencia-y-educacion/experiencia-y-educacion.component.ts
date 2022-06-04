@@ -6,9 +6,6 @@ import { EducacionService } from 'src/app/servicios/educacion.service';
 import { TokenService } from 'src/app/servicios/token.service';
 
 
-
-
-
 @Component({
   selector: 'app-experiencia-y-educacion',
   templateUrl: './experiencia-y-educacion.component.html',
