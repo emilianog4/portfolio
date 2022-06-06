@@ -1,8 +1,39 @@
-<div>
-<app-header></app-header>
-<app-barra-lateral></app-barra-lateral>
-<app-home id="home"></app-home>
-<app-acerca-de id="acerca-de"></app-acerca-de>
-<app-experiencia-y-educacion id="experiencia-y-educacion"></app-experiencia-y-educacion>
-<app-aptitudes id="aptitudes"></app-aptitudes>
+
+    <!-- BARRA DE NAVEGACION LATERAL -->
+
+<button
+  class="btn"
+  id="button"
+  type="button"
+  data-bs-toggle="offcanvas"
+  data-bs-target="#offcanvasWithBothOptions"
+  aria-controls="offcanvasWithBothOptions"
+>
+<i class="fa-solid fa-bars fa-lg"></i>
+</button>
+<div
+  class="offcanvas offcanvas-start"
+  data-bs-scroll="true"
+  tabindex="-1"
+  id="offcanvasWithBothOptions"
+  aria-labelledby="offcanvasWithBothOptionsLabel"
+>
+  <div class="offcanvas-body">
+  <a routerLink=""><p>Home</p> </a>
+  <a routerLink="acerca" fragment="acerca"><p>Acerca de</p></a>
+  <a routerLink="educacion" fragment="educacion"><p>Educacion</p></a>
+  <a [routerLink]="['/skills']" fragment="skills"><p>Skills</p></a>
 </div>
+</div>
+<div>
+
+
+    <!-- COMPONENTES DEL PORTFOLIO -->
+
+    <app-header></app-header>
+<app-home id="home"></app-home>
+<app-acerca-de id="acerca"></app-acerca-de>
+<app-experiencia-y-educacion id="educacion"></app-experiencia-y-educacion>
+<app-aptitudes id="skills"></app-aptitudes>
+</div>
+<router-outlet></router-outlet>

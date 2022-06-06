@@ -31,6 +31,7 @@ h1 {
     display: flex;
     justify-content: center;
     font-size: 3rem;
+    text-align: center;
     margin: 5rem auto;
 }
 
@@ -74,8 +75,16 @@ input {
     border-radius: 1rem;
     margin: 1rem;
     padding: 0.4rem;
-    width: 20vw;
-    height:17vw;
+}
+
+.col{
+    display:flex;
+    justify-content: center;
+    width: 75%;
+}
+
+a{
+    margin: .3rem;
 }
 
 #addSkillsModal,
@@ -99,7 +108,6 @@ input {
     }
     #skillCard {
         width: 28vw;
-        height:25vw;
         display:grid;
         align-items: center;
         margin: 1rem;
@@ -117,10 +125,14 @@ input {
         }
         #skillCard {
             width: 28vw;
-            height:25vw;
             display:grid;
             align-items: center;
             margin: 1rem;
+        }
+        .col{
+            display:flex;
+            justify-content: center;
+            margin-left: 2rem;
         }
 
 }
@@ -136,27 +148,28 @@ input {
         }
         #skillCard {
             width: 28vw;
-            height:25vw;
             display:grid;
             align-items: center;
-            margin-bottom: 6rem;
+            margin-bottom: 4rem;
         }
 
     }
     @media (max-width: 576px) {
         #card-skill {
             display: grid;
-            grid-template-columns: 60% 60%;
+            grid-template-columns: 1fr;
             justify-content: center;
             align-items: center;
             
         }
         #skillCard {
-            width: 28vw;
-            height:25vw;
-            display:grid;
-            align-items: center;
-            margin-bottom: 10rem;
-        }
+            width: 30vw;
+            height:100vw;
 
+        }
+        #caja{
+            display:flex;
+            justify-content: center;
+            margin-top: 0;
+        }
     }

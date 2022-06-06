@@ -37,11 +37,26 @@
 #arriba{
   background-color: rgba(0, 0, 0, 0.502) !important;
 }
+
+
+
+
+
 @media (max-width: 1680px){
   #is{
     display: none;
   }
   #APlogo{
     width: 8rem;
+  }
+}
+
+
+@media (max-width: 374px){
+  #is{
+    display: none;
+  }
+  #APlogo{
+    width: 7rem;
   }
 }

@@ -26,7 +26,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './components/auth/login.component';
 import { HomeComponent } from './components/home/home.component';
 import { interceptorProvider } from './interceptors/interceptor.service';
-import { BarraLateralComponent } from './components/barra-lateral/barra-lateral.component';
 
 
 
@@ -41,8 +40,7 @@ import { BarraLateralComponent } from './components/barra-lateral/barra-lateral.
     EducacionComponent,
     PortfolioComponent,
     LoginComponent,
-    HomeComponent,
-    BarraLateralComponent
+    HomeComponent
   ],
   imports: [
     BrowserModule,

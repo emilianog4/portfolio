@@ -10,7 +10,7 @@
 </div>
 <div id="card-skill">
   <div *ngFor="let skill of skills" id="skillCard">
-    <div class="col text-center" *ngIf="isAdmin">
+    <div class="col" *ngIf="isAdmin">
       <a (click)="onOpenModal('edit', skill)" role="button" class="btn btn-primary tooltips" data placement="top"
         data-bs-toggle="modal" data-bs-target="#editSkillsModal" title="Editar skill"><i class="fa fa-pencil"> </i>
         Editar
