@@ -19,21 +19,22 @@
   aria-labelledby="offcanvasWithBothOptionsLabel"
 >
   <div class="offcanvas-body">
-  <a routerLink=""><p>Home</p> </a>
-  <a routerLink="acerca" fragment="acerca"><p>Acerca de</p></a>
-  <a routerLink="educacion" fragment="educacion"><p>Educacion</p></a>
-  <a [routerLink]="['/skills']" fragment="skills"><p>Skills</p></a>
+  <a routerLink=""><p><i class="fa-solid fa-house" id="icono"></i>Home</p></a>
+  <a routerLink="acerca" fragment="acerca"><p><i class="fa-solid fa-user" id="icono"></i>Acerca</p></a>
+  <a routerLink="educacion" fragment="educacion"><p><i class="fa-solid fa-book" id="icono"></i>Educacion</p></a>
+  <a [routerLink]="['/skills']" fragment="skills"><p><i class="fa-solid fa-atom" id="icono"></i>Skills</p></a>
 </div>
 </div>
-<div>
 
 
     <!-- COMPONENTES DEL PORTFOLIO -->
 
-    <app-header></app-header>
+<div>
+<app-header></app-header>
 <app-home id="home"></app-home>
 <app-acerca-de id="acerca"></app-acerca-de>
 <app-experiencia-y-educacion id="educacion"></app-experiencia-y-educacion>
 <app-aptitudes id="skills"></app-aptitudes>
+<app-footer></app-footer>
 </div>
 <router-outlet></router-outlet>

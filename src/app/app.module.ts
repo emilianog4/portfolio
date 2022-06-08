@@ -26,6 +26,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './components/auth/login.component';
 import { HomeComponent } from './components/home/home.component';
 import { interceptorProvider } from './interceptors/interceptor.service';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 
@@ -40,7 +41,8 @@ import { interceptorProvider } from './interceptors/interceptor.service';
     EducacionComponent,
     PortfolioComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
